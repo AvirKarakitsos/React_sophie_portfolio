@@ -33,6 +33,7 @@ function Card({content}) {
     } else {
         return(
             <article className="cardContainer">
+                <img src={content.logo} alt="logo microsoft" width={200}/>
                 <h2>{content.title}</h2>
             </article>
         )

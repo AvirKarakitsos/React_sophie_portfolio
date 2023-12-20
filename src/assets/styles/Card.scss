@@ -52,26 +52,30 @@ $titleFontSize: 50px;
             position: relative;
 
             img {
-                height: 200px;
-                width: 200px;
                 position: absolute;
                 display: block;
                 object-fit: cover;
                 border-radius: 50%;
             }
             .photo1 {
+                height: 250px;
+                width: 250px;
                 top: 25px;
-                left: 300px;
+                left: 320px;
                 z-index: 20;
             }
             .photo2 {
-                top: 250px;
-                left: 350px;
+                height: 200px;
+                width: 200px;
+                top: 270px;
+                left: 400px;
                 z-index: 30;
             }
             .photo3 {
-                top: 125px;
-                left: 150px;
+                height: 150px;
+                width: 150px;
+                top: 210px;
+                left: 250px;
                 z-index: 10;
             }
         }
