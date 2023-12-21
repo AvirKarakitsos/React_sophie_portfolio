@@ -1,5 +1,6 @@
 import data from '../assets/data.json'
 import Card from './Card'
+import Table from './Table'
 import '../assets/styles/Horizontal.scss'
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
@@ -17,6 +18,7 @@ function Horizontal() {
             <div className="container__horizontal">
             <header>Header</header>
                 <motion.div style={{x}} className="container__horizontal__cards">
+                    <Table/>
                     {data.map((card) => <Card key={card.id} content={card}/> )}
                 </motion.div>
             </div>
