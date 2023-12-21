@@ -18,7 +18,7 @@ function Card({content}) {
                         <img src={photo3} alt="photo 3" className="photo3" />
                     </div>
                     <div className="tableContainer__content__text">
-                        <p className='tableContainer__content__text__title'>Liste de mes experiences professionnelles</p>
+                        <p className='tableContainer__content__text__description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, a temporibus perferendis reprehenderit, distinctio voluptate impedit dicta vitae repudiandae sit esse ullam at laboriosam earum, harum suscipit corrupti praesentium. Perferendis.</p>
                         <ul className='tableContainer__content__text__list'>
                             <li><p className='item1'>Universal</p></li>
                             <li><p className='item2'>France Télévision Publicité</p></li>
