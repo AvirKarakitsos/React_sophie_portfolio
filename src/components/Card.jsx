@@ -5,16 +5,21 @@ function Card({content}) {
     return(
         <article className="cardContainer">
             <section className="cardContainer__left">
-                <img src={content.logo} alt="logo microsoft" className={content.title}/>
-                <div className="cardContainer__left__content">
-                    <p>{content.role}</p>
+                <div className="subContainer">
+                    <img src={content.logo} alt="logo microsoft" className={content.title}/>
+                    <div className="cardContainer__left__content">
+                        <p>{content.role}</p>
+                    </div>
                 </div>
             </section>
             <section className="cardContainer__right">
-                <ul className="cardContainer__right__list">
+                <ul className="list">
                     {content.content.map((element,index) => <li key={index}>{element}</li>)}
                 </ul>
             </section>
+            {content.title === "universal" &&
+            <img src="https://cdn.webshopapp.com/shops/2090/files/320158256/image.jpg" alt="minions" className='minions'/>
+            }
         </article>
     )
 }
