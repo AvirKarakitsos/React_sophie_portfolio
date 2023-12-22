@@ -1,9 +1,9 @@
 $color-gradient: linear-gradient(to left bottom, rgba(250,250,250), rgba(230,230,230));
 
 .modal {
-    top: 10%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
     border: 0;
     outline: 0;
     border-radius: 7px;
@@ -11,7 +11,8 @@ $color-gradient: linear-gradient(to left bottom, rgba(250,250,250), rgba(230,230
 
     &__container {
         height: 500px;
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -23,7 +24,6 @@ $color-gradient: linear-gradient(to left bottom, rgba(250,250,250), rgba(230,230
             font-size: 20px;
         }
         .list {
-            // height: 100%;
             list-style-type: none;
             display: flex;
             flex-direction: column;
@@ -50,4 +50,40 @@ $color-gradient: linear-gradient(to left bottom, rgba(250,250,250), rgba(230,230
 
 .modal::backdrop {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 720px) {
+    .modal {
+    
+        &__container {
+            height: 400px;
+            row-gap: 35px;
+    
+            .contact {
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
+            }
+        
+            .list {
+                row-gap: 15px;
+            
+                li {
+                    display: flex;
+                    padding: 0 10px;
+                    column-gap: 5px;
+                    font-size: 15px;
+                    
+                    a {
+                        outline: 0;
+                    }
+                    
+                    img {
+                        display: block;
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
 }
