@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import {LanguageContext} from "../utils/context/LanguageContext"
 
 function Card() {
-    const {toggleLanguage} = useContext(LanguageContext)
+    const {lang, toggleLanguage} = useContext(LanguageContext)
 
     return(
         <header className='header'>
@@ -13,8 +13,8 @@ function Card() {
                     <li>Contact</li>
                 </ul>
                 <ul className='list lang'>
-                    <li onClick={() => toggleLanguage("fr")} className='french'>FR</li>
-                    <li onClick={() => toggleLanguage("en")} className='english'>EN</li>
+                    <li onClick={() => toggleLanguage("fr")} className={lang === "fr" ? "borderBlue" : ""}>FR</li>
+                    <li onClick={() => toggleLanguage("en")} className={lang === "en" ? "borderBlue" : ""}>EN</li>
                 </ul>
             </nav>
         </header>
