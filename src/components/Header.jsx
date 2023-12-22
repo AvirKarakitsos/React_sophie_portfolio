@@ -1,6 +1,9 @@
 import '../assets/styles/Header.scss'
+import { useContext } from 'react'
+import {LanguageContext} from "../utils/context/LanguageContext"
 
 function Card() {
+    const {toggleLanguage} = useContext(LanguageContext)
 
     return(
         <header className='header'>
@@ -10,8 +13,8 @@ function Card() {
                     <li>Contact</li>
                 </ul>
                 <ul className='list lang'>
-                    <li className='french'>FR</li>
-                    <li className='english'>EN</li>
+                    <li onClick={() => toggleLanguage("fr")} className='french'>FR</li>
+                    <li onClick={() => toggleLanguage("en")} className='english'>EN</li>
                 </ul>
             </nav>
         </header>
