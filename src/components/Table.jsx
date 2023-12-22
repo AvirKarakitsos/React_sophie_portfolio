@@ -3,7 +3,8 @@ import photo1 from '../assets/images/photo1.png'
 import photo2 from '../assets/images/photo2.png'
 import photo3 from '../assets/images/photo3.png'
 
-function Table() {
+function Table({content}) {
+
         return (
             <article className="tableContainer">
                 <div className="tableContainer__titles">
@@ -17,7 +18,7 @@ function Table() {
                         <img src={photo3} alt="photo 3" className="photo3" />
                     </div>
                     <div className="tableContainer__content__text">
-                        <p className='tableContainer__content__text__description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, a temporibus perferendis reprehenderit, distinctio voluptate impedit dicta vitae repudiandae sit esse ullam at laboriosam earum, harum suscipit corrupti praesentium. Perferendis.</p>
+                        <p className='tableContainer__content__text__description'>{content.description}</p>
                         <ul className='tableContainer__content__text__list'>
                             <li><p className='item1'>Universal</p></li>
                             <li><p className='item2'>France Télévision Publicité</p></li>

@@ -1,5 +1,14 @@
 [
     {
+        "id": 0,
+        "description": "Text in english!! sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "header": [
+            "Resume",
+            "Contact"
+        ],
+        "modal":"Contact me by mail or on linkedin"
+    },
+    {
         "id": 1,
         "title": "universal",
         "logo": "http://localhost:5173/logo/universal_logo.svg",

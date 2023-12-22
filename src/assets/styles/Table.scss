@@ -44,6 +44,9 @@ $titleFontSize: 50px;
                 display: block;
                 object-fit: cover;
                 border-radius: 50%;
+                box-shadow: 3px 3px 6px 0px rgba(50,50,50,0.73);
+                -webkit-box-shadow: 3px 3px 6px 0px rgba(50,50,50,0.73);
+                -moz-box-shadow: 3px 3px 6px 0px rgba(50,50,50,0.73);
             }
             .photo1 {
                 height: 250px;
