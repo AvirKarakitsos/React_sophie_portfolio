@@ -1,4 +1,5 @@
 import data from '../assets/data.json'
+import Header from './Header'
 import Card from './Card'
 import Table from './Table'
 import '../assets/styles/Horizontal.scss'
@@ -16,7 +17,7 @@ function Horizontal() {
     return(
         <section ref={targetRef} className="container"> 
             <div className="container__horizontal">
-            <header>Header</header>
+                <Header/>
                 <motion.div style={{x}} className="container__horizontal__cards">
                     <Table/>
                     {data.map((card) => <Card key={card.id} content={card}/> )}

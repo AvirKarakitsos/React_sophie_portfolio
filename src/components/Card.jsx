@@ -18,7 +18,7 @@ function Card({content}) {
                 </ul>
             </section>
             {content.title === "universal" &&
-            <img src="https://cdn.webshopapp.com/shops/2090/files/320158256/image.jpg" alt="minions" className='minions'/>
+                <img src="https://cdn.webshopapp.com/shops/2090/files/320158256/image.jpg" alt="minions" className='minions'/>
             }
         </article>
     )

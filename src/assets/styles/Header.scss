@@ -1,0 +1,41 @@
+$color-gradient: linear-gradient(to left bottom, rgba(250,250,250,.5), rgba(240,240,240,.7));
+
+.header {
+    height: 75px;
+    padding: 0 100px;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 17px;
+    background: $color-gradient;
+    border-bottom: 1xp solid $color-gradient;
+    z-index: 20;
+    
+    .navbar {
+        width: 222px;
+        display: flex;
+        justify-content: space-between;
+
+        .list {
+            height: 30px;
+            margin: 0 25;
+            display: flex;
+            column-gap: 15px;
+            list-style-type: none;
+
+            li {
+                height: 100%;
+                cursor: pointer;
+            }
+            .link {
+                color: black;
+                text-decoration: none;
+            }
+            .french {
+                border-bottom: 2px solid blue;
+            }
+        }
+    }
+}
