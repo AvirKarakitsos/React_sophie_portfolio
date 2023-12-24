@@ -1,7 +1,7 @@
 import '../assets/styles/Header.scss'
 import { useContext, useRef } from 'react'
 import {LanguageContext} from "../utils/context/LanguageContext"
-import { URL_LOCAL } from '../utils/constants'
+import { URL_PROD } from '../utils/constants'
 
 function Header({content, setIsOpen}) {
     const {lang, toggleLanguage} = useContext(LanguageContext)
@@ -17,7 +17,7 @@ function Header({content, setIsOpen}) {
         <header ref={headerRef} className='header'>
             <nav className='navbar'>
                 <ul className='list'>
-                    <li><a className='link' href={URL_LOCAL+'document/resume.pdf'} target='_blank' rel="noreferrer">{content.header[0]}</a></li>
+                    <li><a className='link' href={URL_PROD+'document/resume.pdf'} target='_blank' rel="noreferrer">{content.header[0]}</a></li>
                     <li onClick={() => setIsOpen(true)}>Contact</li>
                 </ul>
                 <ul className='list lang'>

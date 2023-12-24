@@ -1,12 +1,12 @@
 import '../assets/styles/Card.scss'
-import { URL_LOCAL } from '../utils/constants'
+import { URL_PROD } from '../utils/constants'
 
 function Card({content}) {
 
     return(
         <article className="cardContainer">
             <section className="cardContainer__left">
-                <img src={URL_LOCAL+content.logo} alt="logo microsoft" className={content.title}/>
+                <img src={URL_PROD+content.logo} alt="logo microsoft" className={content.title}/>
                 <div className="cardContainer__left__content">
                     <p><span className='date'>{content.date}:</span>&nbsp;{content.role}</p>
                 </div>
