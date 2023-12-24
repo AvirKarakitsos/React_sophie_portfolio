@@ -1,6 +1,9 @@
 $color-gradient: linear-gradient(to left bottom, rgba(250,250,250), rgba(230,230,230));
 
 .modal {
+    height: 500px;
+    width: 100%;
+    max-width: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -10,9 +13,7 @@ $color-gradient: linear-gradient(to left bottom, rgba(250,250,250), rgba(230,230
     background: $color-gradient;
 
     &__container {
-        height: 500px;
-        width: 100%;
-        max-width: 500px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -54,6 +55,8 @@ $color-gradient: linear-gradient(to left bottom, rgba(250,250,250), rgba(230,230
 
 @media screen and (max-width: 720px) {
     .modal {
+        height: 350px;
+        max-width: 350px;
     
         &__container {
             height: 400px;
@@ -69,17 +72,10 @@ $color-gradient: linear-gradient(to left bottom, rgba(250,250,250), rgba(230,230
                 row-gap: 15px;
             
                 li {
-                    display: flex;
                     padding: 0 10px;
                     column-gap: 5px;
-                    font-size: 15px;
-                    
-                    a {
-                        outline: 0;
-                    }
                     
                     img {
-                        display: block;
                         width: 25px;
                     }
                 }

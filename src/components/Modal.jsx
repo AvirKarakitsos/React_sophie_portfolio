@@ -1,23 +1,20 @@
 import "../assets/styles/Modal.scss"
 import gmail from "../assets//images/gmail.png"
 import linkedin from "../assets//images/linkedin.png"
-import { useEffect, useRef } from "react"
+import { useRef } from "react"
 
 function Modal({content, isOpen, setIsOpen}) {
     const refModal = useRef(null)
+
+    if(isOpen) {
+        refModal.current.showModal()
+        refModal.current.addEventListener("mousedown", () => {
+            refModal.current.close()
+            setIsOpen(false)
+        })
+        refModal.current.children[0].addEventListener("mousedown", (event) => event.stopPropagation())
+    }
     
-    useEffect(()=>{
-        if(isOpen) {
-            refModal.current.showModal()
-            refModal.current.addEventListener("mousedown", () => {
-                refModal.current.close()
-                setIsOpen(false)
-            })
-            refModal.current.children[0].addEventListener("mousedown", (event) => event.stopPropagation())
-        }
-
-    },[isOpen, setIsOpen])
-
     return (
         <dialog ref={refModal} className="modal">
             <div className="modal__container">
