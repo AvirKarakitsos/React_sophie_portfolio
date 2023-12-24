@@ -20,7 +20,7 @@ function Modal({content, isOpen, setIsOpen}) {
             <div className="modal__container">
                 <p className="contact">{content.modal}</p>
                 <ul className="list">
-                    <li><img src={linkedin} alt="gmail"/><a href="https://ie.linkedin.com/in/sophiecotsoyannis">ie.linkedin.com/in/sophiecotsoyannis</a></li>
+                    <li><img src={linkedin} alt="gmail"/><a href="https://ie.linkedin.com/in/sophiecotsoyannis" target="_blank" rel="noreferrer">ie.linkedin.com/in/sophiecotsoyannis</a></li>
                     <li><img src={gmail} alt="linkedin"/><a href="#">sopie.cotsoyannis@gmail.com</a></li>
                 </ul>
             </div>
